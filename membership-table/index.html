@@ -1,9 +1,4 @@
 <section class="membership-fees-section">
-  <div class="membership-header">
-    <h2>Membership Categories &amp; Fees<span>+</span></h2>
-    <p>The DPJCC offers membership packages and rates to meet your individual needs.</p>
-  </div>
-
   <div class="membership-table-wrap">
     <table class="membership-table">
       <thead>
@@ -18,55 +13,55 @@
         <tr>
           <td data-label="Category">Family*</td>
           <td data-label="Description">Couple and all children under 25 years of age.</td>
-          <td data-label="Monthly Dues">$123</td>
+          <td data-label="Monthly Dues" class="dues-price">$123</td>
         </tr>
 
         <tr>
           <td data-label="Category">Parent Plus*</td>
           <td data-label="Description">One adult and all children under 25 years of age.</td>
-          <td data-label="Monthly Dues">$103</td>
+          <td data-label="Monthly Dues" class="dues-price">$103</td>
         </tr>
 
         <tr>
           <td data-label="Category">Young Adult</td>
           <td data-label="Description">Individual 18–35 years of age who is not a full-time student.</td>
-          <td data-label="Monthly Dues">$67</td>
+          <td data-label="Monthly Dues" class="dues-price">$67</td>
         </tr>
 
         <tr>
           <td data-label="Category">Individual</td>
           <td data-label="Description">Individual 36–59 years of age.</td>
-          <td data-label="Monthly Dues">$77</td>
+          <td data-label="Monthly Dues" class="dues-price">$77</td>
         </tr>
 
         <tr>
           <td data-label="Category">Couple</td>
           <td data-label="Description">Couple without any children residing at home.</td>
-          <td data-label="Monthly Dues">$113</td>
+          <td data-label="Monthly Dues" class="dues-price">$113</td>
         </tr>
 
         <tr>
           <td data-label="Category">Senior Couple</td>
           <td data-label="Description">Couple with at least one individual 60 years of age or over.</td>
-          <td data-label="Monthly Dues">$95</td>
+          <td data-label="Monthly Dues" class="dues-price">$95</td>
         </tr>
 
         <tr>
           <td data-label="Category">Individual Senior</td>
           <td data-label="Description">Individual 60 years of age or older.</td>
-          <td data-label="Monthly Dues">$67</td>
+          <td data-label="Monthly Dues" class="dues-price">$67</td>
         </tr>
 
         <tr>
           <td data-label="Category">Student*</td>
           <td data-label="Description">Full-time student 13–25 years of age with a current valid student I.D.</td>
-          <td data-label="Monthly Dues">$59</td>
+          <td data-label="Monthly Dues" class="dues-price">$59</td>
         </tr>
 
         <tr class="featured-row">
           <td data-label="Category">College Student</td>
           <td data-label="Description">Summer/vacation memberships available.</td>
-          <td data-label="Monthly Dues">Contact the membership office.</td>
+          <td data-label="Monthly Dues" class="dues-contact">Contact the membership office.</td>
         </tr>
       </tbody>
     </table>
@@ -83,43 +78,18 @@
   .membership-fees-section {
     max-width: 980px;
     margin: 0 auto;
-    padding: 34px 24px;
-    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    padding: 18px 24px 34px;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
     color: #172235;
     box-sizing: border-box;
   }
 
-  .membership-header {
-    margin-bottom: 20px;
-  }
-
-  .membership-header h2 {
-    margin: 0 0 6px;
-    color: #c57a32;
-    font-size: clamp(1.7rem, 3vw, 2.25rem);
-    line-height: 1.15;
-    font-weight: 800;
-    letter-spacing: -0.035em;
-  }
-
-  .membership-header h2 span {
-    color: #315f9e;
-    margin-left: 2px;
-  }
-
-  .membership-header p {
-    margin: 0;
-    font-size: 1.05rem;
-    line-height: 1.5;
-    color: #344055;
-  }
-
   .membership-table-wrap {
     background: #ffffff;
-    border: 1px solid rgba(49, 95, 158, 0.16);
-    border-radius: 18px;
+    border: 1px solid rgba(49, 95, 158, 0.18);
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 14px 34px rgba(24, 51, 88, 0.1);
+    box-shadow: 0 10px 26px rgba(24, 51, 88, 0.1);
   }
 
   .membership-table {
@@ -129,15 +99,22 @@
   }
 
   .membership-table thead {
-    background: linear-gradient(135deg, #315f9e, #234c82);
+    background: #315f9e;
     color: #ffffff;
   }
 
   .membership-table th {
     padding: 14px 16px;
-    text-align: left;
-    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    line-height: 1.2;
     letter-spacing: 0.01em;
+    border-right: 1px solid rgba(255, 255, 255, 0.28);
+  }
+
+  .membership-table th:last-child {
+    border-right: none;
   }
 
   .membership-table th:first-child {
@@ -150,37 +127,54 @@
 
   .membership-table th:last-child {
     width: 23%;
-    text-align: center;
   }
 
   .membership-table td {
     padding: 13px 16px;
-    border-bottom: 1px solid rgba(49, 95, 158, 0.11);
+    border-bottom: 1px solid rgba(49, 95, 158, 0.16);
+    border-right: 1px solid rgba(49, 95, 158, 0.1);
     vertical-align: middle;
-  }
-
-  .membership-table tbody tr:nth-child(odd) {
-    background: #fff8ed;
-  }
-
-  .membership-table tbody tr:nth-child(even) {
-    background: #f4f8f4;
-  }
-
-  .membership-table tbody tr:hover {
-    background: #edf5ff;
-  }
-
-  .membership-table td:first-child {
-    font-weight: 800;
-    color: #234c82;
+    line-height: 1.35;
   }
 
   .membership-table td:last-child {
+    border-right: none;
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
     color: #172235;
     white-space: nowrap;
+  }
+
+  .membership-table tbody tr:nth-child(odd) {
+    background: #ffffff;
+  }
+
+  .membership-table tbody tr:nth-child(even) {
+    background: #edf3f0;
+  }
+
+  .membership-table tbody tr:hover {
+    background: #e8f2ff;
+  }
+
+  .membership-table td:first-child {
+    text-align: left;
+    font-weight: 700;
+    color: #234c82;
+  }
+
+  .membership-table td:nth-child(2) {
+    text-align: left;
+  }
+
+  .membership-table .dues-price {
+    font-size: 1.15rem;
+    font-weight: 800;
+  }
+
+  .membership-table .dues-contact {
+    font-size: 0.98rem;
+    font-weight: 700;
   }
 
   .membership-table tbody tr:last-child td {
@@ -188,11 +182,11 @@
   }
 
   .membership-table .featured-row {
-    background: #eef6ff !important;
+    background: #f7ead6 !important;
   }
 
   .membership-table .featured-row td:first-child {
-    color: #c57a32;
+    color: #a96725;
   }
 
   .membership-notes {
@@ -216,7 +210,7 @@
 
   @media (max-width: 720px) {
     .membership-fees-section {
-      padding: 24px 14px;
+      padding: 18px 14px 28px;
     }
 
     .membership-table-wrap {
@@ -239,7 +233,7 @@
 
     .membership-table tbody tr {
       padding: 14px 16px;
-      border-bottom: 1px solid rgba(49, 95, 158, 0.14);
+      border-bottom: 1px solid rgba(49, 95, 158, 0.18);
     }
 
     .membership-table tbody tr:last-child {
@@ -249,6 +243,7 @@
     .membership-table td {
       padding: 7px 0;
       border-bottom: none;
+      border-right: none;
       text-align: left !important;
       white-space: normal !important;
     }
@@ -258,7 +253,7 @@
       display: block;
       margin-bottom: 2px;
       font-size: 0.72rem;
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #6c7890;
@@ -266,6 +261,14 @@
 
     .membership-table td:first-child {
       font-size: 1.08rem;
+    }
+
+    .membership-table .dues-price {
+      font-size: 1.1rem;
+    }
+
+    .membership-table .dues-contact {
+      font-size: 0.98rem;
     }
 
     .membership-notes {
