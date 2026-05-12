@@ -1,0 +1,228 @@
+<section class="children-directory-section">
+  <div class="children-directory-header">
+    <p class="children-eyebrow">Children</p>
+    <h2>Explore Children’s Programs</h2>
+    <p>
+      Find programs, enrichment opportunities, early childhood learning centers, and youth experiences at the DPJCC.
+    </p>
+  </div>
+
+  <div class="children-program-grid">
+    <a href="https://www.dpjcc.org/afterschool" class="program-card">
+      <div class="program-icon">🎒</div>
+      <div>
+        <h3>Afterschool Adventure / PASS Program</h3>
+        <p>After-school care and programming for children in a safe, engaging environment.</p>
+      </div>
+      <span class="program-arrow">›</span>
+    </a>
+
+    <a href="https://www.dpjcc.org/kidsenrichment" class="program-card">
+      <div class="program-icon">✨</div>
+      <div>
+        <h3>After-school Enrichment Classes</h3>
+        <p>Creative, educational, and activity-based classes for children after school.</p>
+      </div>
+      <span class="program-arrow">›</span>
+    </a>
+
+    <a href="https://www.dpjcc.org/sunrisedaycamp" class="program-card">
+      <div class="program-icon">☀️</div>
+      <div>
+        <h3>Sunrise Programs South Florida</h3>
+        <p>Specialized programming and support services for children and families.</p>
+      </div>
+      <span class="program-arrow">›</span>
+    </a>
+
+    <a href="https://www.dpjcc.org/helpusgrow" class="program-card">
+      <div class="program-icon">🌱</div>
+      <div>
+        <h3>Help Us Grow Preschool Campaign</h3>
+        <p>Support early childhood education and help strengthen preschool opportunities.</p>
+      </div>
+      <span class="program-arrow">›</span>
+    </a>
+
+    <a href="https://www.dpjcc.org/baer" class="program-card">
+      <div class="program-icon">🏫</div>
+      <div>
+        <h3>Baer Family Early Childhood Learning Center</h3>
+        <p>Early childhood learning center serving families in Fort Lauderdale.</p>
+      </div>
+      <span class="program-arrow">›</span>
+    </a>
+
+    <a href="https://www.dpjcc.org/singer" class="program-card">
+      <div class="program-icon">🧸</div>
+      <div>
+        <h3>Singer Early Childhood Learning Center</h3>
+        <p>Early childhood learning center serving families in Davie.</p>
+      </div>
+      <span class="program-arrow">›</span>
+    </a>
+
+    <a href="https://www.dpjcc.org/maccabitzair" class="program-card">
+      <div class="program-icon"⛺</div>
+      <div>
+        <h3>Maccabi Tzair</h3>
+        <p>Youth programming centered around community, culture, leadership, and connection.</p>
+      </div>
+      <span class="program-arrow">›</span>
+    </a>
+
+    <a href="https://www.dpjcc.org/ftlmaccabi" class="program-card">
+      <div class="program-icon">🏅</div>
+      <div>
+        <h3>JCC Maccabi Games® &amp; Access</h3>
+        <p>Athletic, social, and community-building opportunities for Jewish teens.</p>
+      </div>
+      <span class="program-arrow">›</span>
+    </a>
+  </div>
+</section>
+
+<style>
+  .children-directory-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 42px 22px;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    color: #172235;
+    box-sizing: border-box;
+  }
+
+  .children-directory-header {
+    max-width: 760px;
+    margin-bottom: 28px;
+  }
+
+  .children-eyebrow {
+    margin: 0 0 8px;
+    color: #c6863a;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .children-directory-header h2 {
+    margin: 0 0 10px;
+    color: #21354f;
+    font-family: Aptos, Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: clamp(1.9rem, 3vw, 2.55rem);
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+  }
+
+  .children-directory-header p {
+    margin: 0;
+    color: #526072;
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+
+  .children-program-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .program-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    min-height: 118px;
+    padding: 20px 20px;
+    background: #f8fbff;
+    border: 1px solid rgba(49, 95, 158, 0.14);
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 8px 22px rgba(24, 51, 88, 0.07);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  }
+
+  .program-card:hover {
+    transform: translateY(-3px);
+    background: #ffffff;
+    border-color: rgba(49, 95, 158, 0.32);
+    box-shadow: 0 14px 30px rgba(24, 51, 88, 0.12);
+  }
+
+  .program-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: #eef5ff;
+    color: #315f9e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+  }
+
+  .program-card h3 {
+    margin: 0 0 6px;
+    color: #20344d;
+    font-family: Aptos, Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.22;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  .program-card p {
+    margin: 0;
+    color: #59677a;
+    font-size: 0.92rem;
+    line-height: 1.42;
+  }
+
+  .program-arrow {
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    background: #315f9e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.65rem;
+    line-height: 1;
+    transition: background 0.18s ease, transform 0.18s ease;
+  }
+
+  .program-card:hover .program-arrow {
+    background: #c6863a;
+    transform: translateX(2px);
+  }
+
+  @media (max-width: 780px) {
+    .children-directory-section {
+      padding: 32px 16px;
+    }
+
+    .children-program-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .program-card {
+      min-height: auto;
+      padding: 18px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .program-card {
+      grid-template-columns: auto 1fr;
+    }
+
+    .program-arrow {
+      display: none;
+    }
+  }
+</style>
