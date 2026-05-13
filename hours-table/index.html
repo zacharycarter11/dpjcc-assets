@@ -1,0 +1,318 @@
+<section class="hours-section">
+  <div class="hours-alert">
+    <strong>Update:</strong>
+    <span>Current Hours of Operation</span>
+
+    <div class="operation-hours-table">
+      <div class="operation-hours-row">
+        <p>Monday–Thursday</p>
+        <strong>6:00 a.m. – 10:00 p.m.</strong>
+      </div>
+
+      <div class="operation-hours-row">
+        <p>Friday</p>
+        <strong>6:00 a.m. – 6:00 p.m.</strong>
+      </div>
+
+      <div class="operation-hours-row">
+        <p>Saturday</p>
+        <strong>8:00 a.m. – 5:00 p.m.</strong>
+      </div>
+
+      <div class="operation-hours-row">
+        <p>Sunday</p>
+        <strong>7:00 a.m. – 6:00 p.m.</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="hours-notes">
+    <ul>
+      <li>Daily lockers are available for use. Showers, sauna, and steam room are open.</li>
+      <li>The basketball gym is open. Bring your own ball.</li>
+      <li>Racquetball/handball courts are open. First come, first served.</li>
+      <li>Hot Tub, Baer swimming pool and the Joe DiMaggio Children&apos;s Hospital Splash Pad are open. See hours below.</li>
+    </ul>
+  </div>
+
+  <div class="hours-grid">
+    <article class="hours-card">
+      <div class="hours-card-top">
+        <div class="hours-icon">🏢</div>
+        <h3>Administration</h3>
+      </div>
+      <div class="hours-list">
+        <div><span>Monday–Friday</span><strong>9:00 a.m. – 5:00 p.m.</strong></div>
+      </div>
+    </article>
+
+    <article class="hours-card">
+      <div class="hours-card-top">
+        <div class="hours-icon">👥</div>
+        <h3>Membership</h3>
+      </div>
+      <div class="hours-list">
+        <div><span>Monday–Thursday</span><strong>8:30 a.m. – 6:00 p.m.</strong></div>
+        <div><span>Friday</span><strong>9:00 a.m. – 5:00 p.m.</strong></div>
+        <div><span>Sunday</span><strong>8:30 a.m. – 2:30 p.m.</strong></div>
+      </div>
+    </article>
+
+    <article class="hours-card featured-hours-card">
+      <div class="hours-card-top">
+        <div class="hours-icon">💪</div>
+        <h3>Fitness Center</h3>
+      </div>
+      <div class="hours-list">
+        <div><span>Monday–Thursday</span><strong>6:00 a.m. – 10:00 p.m.</strong></div>
+        <div><span>Friday</span><strong>6:00 a.m. – 6:00 p.m.</strong></div>
+        <div><span>Saturday</span><strong>8:00 a.m. – 5:00 p.m.</strong></div>
+        <div><span>Sunday</span><strong>7:00 a.m. – 6:00 p.m.</strong></div>
+      </div>
+    </article>
+
+    <article class="hours-card">
+      <div class="hours-card-top">
+        <div class="hours-icon">🏊</div>
+        <h3>Pool Hours</h3>
+      </div>
+      <div class="hours-list">
+        <div><span>Monday–Thursday</span><strong>7:00 a.m. – 6:00 p.m.</strong></div>
+        <div><span>Friday</span><strong>7:00 a.m. – 5:30 p.m.</strong></div>
+        <div><span>Saturday</span><strong>8:00 a.m. – 4:30 p.m.</strong></div>
+        <div><span>Sunday</span><strong>9:00 a.m. – 5:30 p.m.</strong></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+  .hours-section {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 24px 22px 34px;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    color: #172235;
+    box-sizing: border-box;
+  }
+
+  .hours-section *,
+  .hours-section *::before,
+  .hours-section *::after {
+    box-sizing: border-box;
+  }
+
+  .hours-alert {
+    margin: 0 0 18px;
+    padding: 22px 22px 20px;
+    background: #fff4f9;
+    border: 1px solid rgba(178, 32, 111, 0.18);
+    border-left: 6px solid #b2206f;
+    border-radius: 18px;
+    color: #9c1e63;
+    box-shadow: 0 10px 26px rgba(178, 32, 111, 0.08);
+  }
+
+  .hours-alert strong {
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.86rem;
+    font-weight: 850;
+  }
+
+  .hours-alert span {
+    display: block;
+    margin-bottom: 16px;
+    font-family: "Aptos Display", Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: clamp(1.5rem, 2.6vw, 2.05rem);
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    color: #9c1e63;
+  }
+
+  .operation-hours-table {
+    display: grid;
+    border: 1px solid rgba(178, 32, 111, 0.16);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .operation-hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    background: #fffafd;
+    border-bottom: 1px solid rgba(178, 32, 111, 0.13);
+  }
+
+  .operation-hours-row:nth-child(even) {
+    background: #fdeef6;
+  }
+
+  .operation-hours-row:last-child {
+    border-bottom: none;
+  }
+
+  .operation-hours-row p {
+    margin: 0;
+    color: #7d3159;
+    font-family: Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 0.98rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+  }
+
+  .operation-hours-row strong {
+    margin: 0;
+    color: #172235;
+    font-family: Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 750;
+    letter-spacing: -0.015em;
+    text-transform: none;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .hours-notes {
+    margin: 0 0 22px;
+    padding: 18px 20px;
+    background: #f8fbff;
+    border: 1px solid rgba(49, 95, 158, 0.13);
+    border-radius: 16px;
+  }
+
+  .hours-notes ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .hours-notes li {
+    margin: 0 0 8px;
+    color: #435168;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .hours-notes li:last-child {
+    margin-bottom: 0;
+  }
+
+  .hours-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .hours-card {
+    background: #ffffff;
+    border: 1px solid rgba(49, 95, 158, 0.14);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(24, 51, 88, 0.07);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  }
+
+  .hours-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(49, 95, 158, 0.28);
+    box-shadow: 0 14px 30px rgba(24, 51, 88, 0.11);
+  }
+
+  .featured-hours-card {
+    background: #f8fbff;
+    border-color: rgba(134, 189, 39, 0.35);
+  }
+
+  .hours-card-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .hours-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: #eef7df;
+    color: #86bd27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .hours-card h3 {
+    margin: 0;
+    color: #c57a32;
+    font-family: "Aptos Display", Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1.18rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  .hours-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .hours-list div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(49, 95, 158, 0.11);
+  }
+
+  .hours-list span {
+    color: #5a6678;
+    font-family: Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 0.93rem;
+    line-height: 1.3;
+  }
+
+  .hours-list strong {
+    color: #172235;
+    font-family: Aptos, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    font-weight: 750;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 800px) {
+    .hours-section {
+      padding: 24px 16px 30px;
+    }
+
+    .hours-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .operation-hours-row,
+    .hours-list div {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .operation-hours-row strong,
+    .hours-list strong {
+      text-align: left;
+      white-space: normal;
+    }
+  }
+</style>
