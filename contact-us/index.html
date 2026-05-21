@@ -26,23 +26,25 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   html, body {
-    background: var(--white);
-    color: var(--ink);
-    font-family: 'Inter', system-ui, sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
+  margin: 0;
+  padding: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  height: auto;
+}
 
-  body {
-    min-height: 100vh;
-    background:
-      radial-gradient(ellipse at top right, rgba(184, 201, 106, 0.08), transparent 50%),
-      radial-gradient(ellipse at bottom left, rgba(42, 138, 138, 0.06), transparent 55%),
-      var(--white);
-    overflow-x: hidden;
-  }
+ body {
+  background:
+    radial-gradient(ellipse at top right, rgba(184, 201, 106, 0.08), transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(42, 138, 138, 0.06), transparent 55%),
+    var(--white);
+}
 
   .page {
     max-width: 1100px;
@@ -293,12 +295,30 @@
 
   /* ---------- RESPONSIVE ---------- */
   @media (max-width: 860px) {
-    .page { padding: 52px 20px 72px; }
-    .card.phone, .card.email { grid-column: span 12; }
-    .info-strip { grid-template-columns: 1fr; gap: 22px; padding: 26px; }
-    .card { padding: 30px 26px; }
-    .card .num { top: 18px; right: 22px; }
+  .page {
+    padding: 36px 18px 44px;
   }
+
+  .card.phone,
+  .card.email {
+    grid-column: span 12;
+  }
+
+  .info-strip {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 24px;
+  }
+
+  .card {
+    padding: 28px 24px;
+  }
+
+  .card .num {
+    top: 18px;
+    right: 22px;
+  }
+}
 </style>
 </head>
 <body>
